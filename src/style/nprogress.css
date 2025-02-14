@@ -1,0 +1,19 @@
+/* nprogress.css - 自定义样式 */
+#nprogress .bar {
+    background: #29d;
+    /* 进度条颜色 */
+    height: 3px;
+    /* 进度条高度 */
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    /* 进度条阴影 */
+}
+
+#nprogress .spinner-icon {
+    border-top: 2px solid #29d;
+    /* 设置 spinner 的颜色 */
+    border-left: 2px solid #29d;
+    /* 设置 spinner 的颜色 */
+}

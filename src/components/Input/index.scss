@@ -1,0 +1,76 @@
+.input_container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+
+    // transition: all 0.3s;
+    // &:hover {
+    //     border-color: #40a9ff;
+    // }
+    .input_title {
+        color: #000;
+        padding-right: 4px;
+    }
+
+    input {
+        // 取消边框
+        border: none;
+        // 取消聚焦时的边框
+        outline: none;
+        // 提示文字颜色
+        color: #000;
+        // 提示文字大小
+        line-height: 20px;
+        // 提示文字距离
+        padding: 2px 4px 0;
+    }
+
+    // 去除 type = number 时的上下箭头
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    // input {
+    //     -moz-appearance: textfield;
+    // }
+
+    // input 提示文字 placeholder 颜色
+    input::placeholder {
+        color: #bfbfbf;
+    }
+}
+
+.small {
+    font-size: 12px;
+    padding: 5px 10px;
+
+    input {
+        font-size: 12px;
+    }
+}
+
+.default {
+    font-size: 12px;
+    padding: 8px 14px;
+
+    input {
+        font-size: 12px;
+    }
+}
+
+.large {
+    font-size: 14px;
+    padding: 12px 20px;
+
+    input {
+        font-size: 14px;
+    }
+}

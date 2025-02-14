@@ -1,0 +1,27 @@
+// 覆盖所有暗色主题菜单
+.ant-menu-dark {
+  // 默认菜单项
+  .ant-menu-item {
+    font-size: 14px; // 字体大小调整
+    color: #a0aec0 !important; // 未选中字体色（冷灰色调）
+    border-radius: 6px !important; // 圆角设定
+    margin: 4px 8px !important; // 菜单项间距调整
+  }
+
+  // 激活项
+  .ant-menu-item-selected {
+    color: #fff !important;
+    background: #4299e1 !important; // 选中背景色（团队品牌蓝）
+    &::after {
+      display: none;
+    } // 去除右侧指示条
+  }
+
+  // 子菜单标题样式
+  .ant-menu-submenu-title {
+    color: #718096;
+    &:hover {
+      color: #63b3ed;
+    }
+  }
+}
