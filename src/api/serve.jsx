@@ -2,9 +2,9 @@ import axios from 'axios'
 import router from '@/router'
 import { util } from '@/utils'
 
-// const baseURL = import.meta.env.VITE_APP_API_URL
+const baseURL = import.meta.env.VITE_APP_API_URL
 const serve = axios.create({
-    baseURL: '/api',
+    baseURL: baseURL,
     timeout: 5000
 })
 

@@ -1,0 +1,18 @@
+.theme_bgd {
+    display: flex;
+    justify-content: center;
+
+    .ant-tag {
+        --w: 30px;
+        width: var(--w);
+        height: var(--w);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .ant-tag:hover {
+        cursor: pointer;
+    }
+}

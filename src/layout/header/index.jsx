@@ -4,6 +4,7 @@ import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
 } from '@ant-design/icons';
+import HeaderRight from './headerRight';
 import PropTypes from 'prop-types';
 
 const { Header } = Layout;
@@ -19,6 +20,8 @@ const Headers = ({ dispatch, collapsed }) => {
                     padding: 0,
                     background: colorBgContainer,
                     borderBottom: '1px solid #f0f0f0',
+                    display: 'flex',
+                    alignItems: 'center',
                 }}
             >
                 <Button
@@ -31,6 +34,9 @@ const Headers = ({ dispatch, collapsed }) => {
                         height: 64,
                     }}
                 />
+                <span className='text-[14px]'>欢迎登录***后台</span>
+                {/* 右侧 */}
+                <HeaderRight />
             </Header>
         </>
     )

@@ -1,14 +1,17 @@
 
-// import { RouterProvider } from "react-router-dom";
-// import router from "./router/index";
+import { Provider } from 'react-redux'
 import { MessageProvider } from "./components/MessageProvider";
 import Router from "@/router/index";
+import store from "@/store";
+import '@/App.css'
 function App() {
   return (
     <>
-      <MessageProvider>
-        <Router />
-      </MessageProvider>
+      <Provider store={store}>
+        <MessageProvider>
+          <Router />
+        </MessageProvider>
+      </Provider>
     </>
   )
 }

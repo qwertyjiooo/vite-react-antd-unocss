@@ -4,14 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode development",
+    "build:test": "vite build --mode test",
+    "build:prod": "vite build --mode production",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview:test": "vite preview --mode test",
+    "preview:prod": "vite preview --mode production"
   },
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@reduxjs/toolkit": "^2.5.1",
     "antd": "^5.23.4",
     "axios": "^1.7.9",
     "js-md5": "^0.8.3",
@@ -19,6 +22,7 @@
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.5",
     "styled-components": "^6.1.15"
   },

@@ -10,7 +10,7 @@ const Main = () => {
         <>
             <Content
                 style={{
-                    // margin: '24px 16px',
+                    height: 'calc(100vh - 64px)',
                     padding: 24,
                     minHeight: 280,
                     background: colorBgContainer,
