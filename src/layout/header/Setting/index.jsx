@@ -3,10 +3,11 @@ import { Tooltip, Drawer, Divider, Switch, Tag } from 'antd';
 import { SettingOutlined, CheckOutlined } from '@ant-design/icons';
 import { colorList } from './data';
 import './index.scss'
+import  useBearStore  from '@/store';
 
 const Setting = () => {
     const [open, setOpen] = useState(false);
-    let [darkChecked, setDarkChecked] = useState(false)
+    // let [darkChecked, setDarkChecked] = useState(false)
     let [grayChecked, setGrayChecked] = useState(false)
     let [weakChecked, setWeakChecked] = useState(false)
     let [bgCheck, setBgCheck] = useState('#1890ff')
@@ -21,6 +22,7 @@ const Setting = () => {
     const changeColor = (item) => { 
         setBgCheck(item)
     }
+    const { bears, increasePopulation } = useBearStore();
 
     return (
         <>
@@ -33,7 +35,9 @@ const Setting = () => {
                 <Divider>模式设置</Divider>
                 <div className="flex items-center justify-between m-[25px_0]">
                     <span>深夜模式</span>
-                    <Switch checked={darkChecked} checkedChildren="开启" unCheckedChildren="关闭" onChange={e => setDarkChecked(e)} />
+                    <Switch checked={bears == 'black'} checkedChildren="开启" unCheckedChildren="关闭" onChange={() => {
+                        increasePopulation()
+                    }} />
                 </div>
                 <div className="flex items-center justify-between m-[25px_0]">
                     <span>灰色模式</span>

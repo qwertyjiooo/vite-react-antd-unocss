@@ -45,7 +45,6 @@
     background-color: var(--main-bg) !important;
     color: #fff !important;
 }
-
 /* 步骤条 */
 .ant-steps-item:hover .ant-steps-item-icon {
     border-color: var(--main-bg) !important;
@@ -107,6 +106,10 @@ input:hover,
 .ant-checkbox-checked:hover,
 .ant-checkbox-checked-inner,
 .ant-switch-checked:focus,
+.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-oustomize-input):not(.ant-pagination-size-changer):hover
+.ant-select-selector,
+.ant-select-focused.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-oustomize-input):not(.ant-pagination-size-changer) .ant-select-selector,
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector
 .ant-switch:focus {
     border-color: var(--main-bg);
     box-shadow: 0 0 0 2px rgba(var(--main-bg), 0.2);
@@ -193,6 +196,7 @@ a:hover,
 .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
 .ant-menu-light .ant-menu-submenu-active,
 .ant-menu-light .ant-menu-submenu-title:hover,
+.ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title,
 .ant-menu-submenu-selected,
 .ant-menu-submenu:hover>.ant-menu-submenu-title>.ant-menu-submenu-expand-icon,
 .ant-menu-submenu:hover>.ant-menu-submenu-title>.ant-menu-submenu-arrow,
@@ -238,12 +242,14 @@ a:hover,
 
 /* 下拉菜单 */
 .ant-dropdown-menu-item-selected,
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector
 .ant-dropdown-menu-submenu-title-selected {
     background-color: var(--main-bg-menu);
     color: var(--main-bg);
 }
 
 /* 日期选择bar */
+
 .ant-picker-range .ant-picker-active-bar {
     background-color: var(--main-bg);
 }

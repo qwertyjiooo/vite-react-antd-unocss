@@ -1,7 +1,7 @@
-/* @import 'antd/dist/antd.css'; */
-@import '/src/style/root.css';
+/* @import '~antd/dist/antd.css'; */
+/* @import 'antd/dist/reset.css'; */
+/* @import '/src/style/root.css'; */
 @import '@/style/nprogress.css';
-
 
 body,
 p,

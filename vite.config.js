@@ -47,6 +47,9 @@ export default defineConfig({
   // css 预处理器配置
   css: {
     preprocessorOptions: {
+      less: {
+        javascriptEnabled: true // 启用 js 变量
+      },
       scss: {
         javascriptEnabled: true // 启用 js 变量
       }

@@ -1,17 +1,23 @@
 
-import { Provider } from 'react-redux'
 import { MessageProvider } from "./components/MessageProvider";
 import Router from "@/router/index";
-import store from "@/store";
+import useBearStore from "@/store";
+import { ConfigProvider, theme } from "antd";
 import '@/App.css'
 function App() {
+  // import('@/style/theme/13C2C2.less')
+  const { bears } = useBearStore();
   return (
     <>
-      <Provider store={store}>
-        <MessageProvider>
+      <MessageProvider>
+        <ConfigProvider
+          theme={{
+            algorithm: bears == 'default' ? theme.defaultAlgorithm  : theme.darkAlgorithm,
+          }}
+        >
           <Router />
-        </MessageProvider>
-      </Provider>
+        </ConfigProvider>
+      </MessageProvider>
     </>
   )
 }
